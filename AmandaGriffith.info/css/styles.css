@@ -1,0 +1,188 @@
+/* ------------------------------------------
+Color Palette
+---------------------------------------------*/
+/*
+#1C2321 - dark jungle green
+#7D98A1 - weldon blue
+#5E6572 - cadet
+#A9B4C2 - wild blue yonder
+#EEF1EF - isabelline
+
+OR
+
+#0A090C - smoky black #0D1321 - eerie black #383F51 - charcoal
+#92140C - sangria  #AF544E - giant's club
+#353238 - jet         #2F323A - gunmetal
+#F0EDEE - isabelline
+#AEB1B8 - silver chalice #D2D4D8 - light gray #EAEBED - isabelline
+#495867 - independence #93A8AC - cadet gray
+*/
+
+/* ---------------------------------------------------
+ Global styles
+----------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #AF544E;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+  padding: 60px 50px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: none;
+  background: #AF544E;
+  color: #F6F7F7;
+  padding: 10px;
+  display: inline-block;
+}
+
+/*---------------------------------------------
+ Header and Footer
+ ----------------------------------------------*/
+
+.profile-img {
+  border-radius: 50%;
+}
+header, footer {
+  background: #383F51;
+  color: #F6F7F7;
+}
+
+/* Header
+------------------------------------------------*/
+
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+margin: 0;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Footer
+------------------------------------------------*/
+
+footer {
+  text-align: center;
+}
+footer h2 {
+  margin-bottom: 10px;
+}
+.contact-info a {
+  margin: 0px 10px;
+  display: inline-block;
+}
+
+/*Navigation
+--------------------------------------------------------*/
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------------------
+Work Experience
+------------------------------------------------------------*/
+
+.work {
+  background: #F6F7F7;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+
+/* ------------------------------------------------
+ Education
+---------------------------------------------------*/
+
+.education {
+/* sets gradient and image */
+  background: linear-gradient(rgba(210, 212, 216, 0.8),
+                 rgba(210, 212, 216, 0.8)),
+                 url(../images/threebooks.jpg) no-repeat fixed;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+/*-------------------------------------------------
+Media queries
+---------------------------------------------------*/
+
+@media (min-width: 850px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 849px) {
+  header{
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
