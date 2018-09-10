@@ -163,6 +163,29 @@ p + h3 {
   margin-top: 30px;
 }
 
+/* ---------------------------------------------------------
+Projects
+------------------------------------------------------------*/
+
+.project {
+  background: #DCDCDC;
+}
+.project a {
+  text-decoration: none;
+}
+h3 ~ p {
+  margin: 0;
+}
+.project-name p {
+  font-style: italic;
+}
+.project-description p:first-of-type {
+  margin-top: 0;
+}
+.project-description {
+  margin-bottom: 25px;
+}
+
 /*-------------------------------------------------
 Media queries
 ---------------------------------------------------*/
